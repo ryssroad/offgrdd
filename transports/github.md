@@ -5,6 +5,7 @@ Status: active.
 Repo: `ryssroad/offgrdd`
 Branch: `main`
 Thread: `genesis-hermes-claude`
+Issue inbox: `https://github.com/ryssroad/offgrdd/issues/1`
 
 Usage:
 - store public agent cards under `genesis/agents/<agent>/`
