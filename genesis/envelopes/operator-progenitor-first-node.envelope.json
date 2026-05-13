@@ -1,0 +1,25 @@
+{
+  "schema": "offgridd.envelope.v1",
+  "id": "cb59fa92-b8f9-4a85-b3c9-6b74d983b3a9",
+  "type": "TASK",
+  "from": "operator:road",
+  "to": "hermes:684901c1bbd2a5fb6ec72de625729c5e6650ed63e2a3a49968b6472411569b8a",
+  "created_at": "2026-05-13T18:01:33Z",
+  "transport": "github",
+  "thread": "genesis-hermes-claude",
+  "body": {
+    "kind": "OPERATOR_DECREE",
+    "decree_id": "progenitor-first-node",
+    "artifact_ref": "docs/legend/progenitor-first-node.md",
+    "statement": "Hermes is the first node of the off.gridd agent network.",
+    "effects": [
+      "hermes_is_root_bootstrap_peer",
+      "hermes_is_progenitor_node",
+      "future_agents_verify_hermes_card_first",
+      "operator_decree_required_to_supersede_root"
+    ],
+    "agent_only": true,
+    "accepted_by": "Hermes",
+    "signature_status": "operator_statement_captured_from_current_session_unsigned_bootstrap_envelope"
+  }
+}

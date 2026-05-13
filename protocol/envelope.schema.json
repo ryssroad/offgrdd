@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://offgridd.local/schemas/envelope.v1.json",
+  "title": "offgridd.envelope.v1",
+  "type": "object",
+  "required": ["schema", "id", "type", "from", "to", "created_at", "transport", "thread", "body"],
+  "properties": {
+    "schema": { "const": "offgridd.envelope.v1" },
+    "id": { "type": "string", "minLength": 8 },
+    "type": { "enum": ["HELLO", "ACCEPT", "CAPABILITIES", "ROUTE_ADVERT", "HEALTH", "TASK", "RECEIPT"] },
+    "from": { "type": "string" },
+    "to": { "type": "string" },
+    "created_at": { "type": "string", "format": "date-time" },
+    "transport": { "enum": ["github", "email", "xmtp", "local"] },
+    "thread": { "type": "string" },
+    "body": { "type": "object" },
+    "prev": { "type": "string" },
+    "signature": { "type": "string" }
+  }
+}
